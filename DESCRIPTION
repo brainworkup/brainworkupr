@@ -1,15 +1,24 @@
 Package: brainworkupr
-Version: 0.0.0.9000
 Title: BrainWorkUp R Neuropsychological Report Writing Package
-Description: This package stores the functions and normative datasets to use for neuropsychological assessments at the USC Keck School of Medicine Department of Psychiatry and Behavioral Sciences.
-Authors@R: c(person(given = "Joey",
-         family = "Trampush",
-         role = c("aut", "cre"),
-         email = "trampush@usc.edu",
-         comment = c(ORCID = "0000-0003-0830-508X")),
-  person(given = "USC",
-         role = "cph"))
+Version: 0.0.0.9000
+Authors@R: c(
+    person("Joey", "Trampush", , "trampush@usc.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0003-0830-508X")),
+    person("USC", role = "cph")
+  )
+Description: This package stores the functions and normative datasets to
+    use for neuropsychological assessments at the USC Keck School of
+    Medicine Department of Psychiatry and Behavioral Sciences.
 License: MIT + file LICENSE
+Imports: 
+    magrittr,
+    stats
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat
+VignetteBuilder: 
+    knitr
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
