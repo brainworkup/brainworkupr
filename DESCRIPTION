@@ -11,8 +11,12 @@ Description: This package stores the functions and normative datasets to
     Medicine Department of Psychiatry and Behavioral Sciences.
 License: MIT + file LICENSE
 Imports: 
+    dplyr,
+    highcharter,
     magrittr,
-    stats
+    rlang,
+    stats,
+    tibble
 Suggests: 
     knitr,
     rmarkdown,

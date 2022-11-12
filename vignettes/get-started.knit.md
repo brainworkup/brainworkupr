@@ -7,14 +7,10 @@ vignette: >
   %\VignetteEncoding{UTF-8}
 ---
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
 
-```{r setup}
+
+
+```r
 library(brainworkupr)
 ```
 
@@ -79,74 +75,9 @@ After inflating the template
 -->
 ```
 
-```{r examples}
-my_median(1:12)
 
-# Example with your dataset in "inst/"
-datafile <- system.file("nyc_squirrels_sample.csv", package = "brainworkupr")
-nyc_squirrels <- read.csv(datafile, encoding = "UTF-8")
-# Apply my function
-my_median(nyc_squirrels[,"hectare_squirrel_number"])
-```
 
-```{=html}
-<!--
-Create a chunk with a test of use for your function
 
-- The chunk needs to be named `tests` at least
-- It contains working tests of your function
-- The chunk is better be named `tests-my_median` to be handled
-correctly when inflated as a vignette
 
-After inflating the template
 
--  This test code will automatically be added in the "tests/testthat/" directory
--->
-```
-
-# Calculate the mean of a vector
-
-```{=html}
-<!--
-There can be other functions, examples and tests in your flat template.
-Each of them will be inflated in a different file, provided that there is a level-1 or level-2 section title to separate from previous functions.
--->
-```
-
-## Use sub-functions in the same chunk
-
-```{r examples-my_other_median}
-my_other_median(1:12)
-```
-
-```{=html}
-<!--
-# There can be development actions
-
-Create a chunk with 'development' actions
-
-- The chunk needs to be named `development` or `dev`
-- It contains functions that are used for package development only
-- Note that you may want to store most of these functions in the 0-dev_history.Rmd file
-
-These are only included in the present flat template file, their content will not be part of the package anywhere else.
--->
-```
-
-# Inflate your package# drill
-
-```{r example-drill}
-datafile <- system.file("neurocog.csv", package = "brainworkupr")
-neurocog <- read.csv(datafile, encoding = "UTF-8")
-patient <- "Biggie"
-drill(patient = patient, data = neurocog)
-```
-
-You're one inflate from paper to box.
-Build your package from this very Rmd using `fusen::inflate()`
-
--   Verify your `"DESCRIPTION"` file has been updated
--   Verify your function is in `"R/"` directory
--   Verify your test is in `"tests/testthat/"` directory
--   Verify this Rmd appears in `"vignettes/"` directory
 
