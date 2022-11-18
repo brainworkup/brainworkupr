@@ -1,0 +1,55 @@
+filename,scale,raw_score,score
+cvlt3_brief.csv,Trial 1 Correct,7,13
+cvlt3_brief.csv,Trial 2 Correct,8,11
+cvlt3_brief.csv,Trial 3 Correct,9,12
+cvlt3_brief.csv,Trial 4 Correct,9,13
+cvlt3_brief.csv,Trials 1-4 Correct,49,114
+cvlt3_brief.csv,Short Delay Free Recall,9,13
+cvlt3_brief.csv,Long Delay Free Recall,9,13
+cvlt3_brief.csv,Long Delay Cued Recall,9,13
+cvlt3_brief.csv,Total Hits,9,11
+cvlt3_brief.csv,Total False Positives,0,10
+cvlt3_brief.csv,Recognition Discriminability (d'),3.5,12
+cvlt3_brief.csv,Recognition Discriminability Nonparametric,100,11
+cvlt3_brief.csv,Total Intrusions,0,12
+examiner.csv,Unstructured Task,1.18,40
+examiner.csv,Letter Fluency,51,76
+examiner.csv,Category Fluency,45,61
+nabs.csv,NAB Total Index,NA,112
+nabs.csv,NAB Attention Index,NA,109
+nabs.csv,Orientation,29,NA
+nabs.csv,Digits Forward,11,57
+nabs.csv,Digits Forward Longest Span,8,NA
+nabs.csv,Digits Backward,5,50
+nabs.csv,Digits Backward Longest Span,5,NA
+nabs.csv,Numbers & Letters Part A Speed,23,68
+nabs.csv,Numbers & Letters Part A Errors,0,49
+nabs.csv,Numbers & Letters Part A Efficiency,174,67
+nabs.csv,Numbers & Letters Part B Efficiency,38,44
+nabs.csv,NAB Language Index,NA,121
+nabs.csv,Auditory Comprehension,56,54
+nabs.csv,Naming,10,59
+nabs.csv,NAB Memory Index,NA,117
+nabs.csv,Shape Learning Immediate Recognition,4,60
+nabs.csv,Shape Learning Delayed Recognition,3,52
+nabs.csv,Shape Learning Percent Retention,75,NA
+nabs.csv,Story Learning Immediate Recall,21,60
+nabs.csv,Story Learning Delayed Recall,22,64
+nabs.csv,Story Learning Percent Retention,105,NA
+nabs.csv,NAB Spatial Index,NA,105
+nabs.csv,Visual Discrimination,4,43
+nabs.csv,Design Construction,15,64
+nabs.csv,NAB Executive Functions Index,NA,86
+nabs.csv,Mazes,5,30
+nabs.csv,Word Generation,8,56
+nabs.csv,Word Generation Perseverations,0,NA
+rocft.csv,ROCFT Copy,36,57
+rocft.csv,ROCFT Delayed Recall,17,42
+tmt.csv,Trails A,14,63
+tmt.csv,Trails B,40,58
+topf.csv,TOPF Standard Score,60,120
+wais4.csv,Similarities,35,17
+wais4.csv,Matrix Reasoning,21,12
+wais4.csv,Letter-Number Sequencing,22,11
+wais4.csv,Coding,109,18
+wms4.csv,Symbol Span,21,8

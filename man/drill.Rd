@@ -4,7 +4,7 @@
 \alias{drill}
 \title{Drilldown on neuropsych domains.}
 \usage{
-drill(patient = NULL, data = c("neurocog", "neurobehav"))
+drill(patient = NULL, data)
 }
 \arguments{
 \item{patient}{Patient name}
@@ -20,6 +20,6 @@ This function uses the R Highcharter package and drilldown function to "drill do
 \examples{
 datafile <- system.file("neurocog.csv", package = "brainworkupr")
 neurocog <- read.csv(datafile, encoding = "UTF-8")
-patient <- "Biggie"
-drill(patient = patient, data = neurocog)
+# patient <- "Biggie"
+drill(patient = "Biggie", data = neurocog)
 }

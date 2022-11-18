@@ -1,0 +1,90 @@
+---
+title: "flat_make_df.Rmd for planting csv file"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r development-make_df, include=FALSE}
+library(testthat)
+```
+
+```{r development-load-make_df}
+# Load already included functions if relevant
+pkgload::load_all(export_all = FALSE)
+```
+
+# make_df
+
+```{r function-make_df}
+#' Make data frame
+#' @param params RMarkdown parameters
+#' @return
+#' A data frame
+#' @export
+#'
+#' @examples
+make_df <- function(params) {
+  df <- tidytable::tidytable(
+    test = (params$test),
+    test_name = (params$test_name),
+    test_type = (params$test_type),
+    scale = (params$scale),
+    raw_score = as.numeric(params$raw_score),
+    score = as.numeric(params$score),
+    ci_95 = NA,
+    score_adj = NA,
+    ci_95_lower = NA,
+    ci_95_upper = NA,
+    percentile = NA,
+    range = NA,
+    range_lower = NA,
+    range_upper = NA,
+    score_type = (params$score_type),
+    domain = (params$domain),
+    subdomain = (params$subdomain),
+    narrow = (params$narrow),
+    pass = (params$pass),
+    verbal = (params$verbal),
+    timed = (params$timed),
+    absort =
+      paste0(
+        tolower(params$test),
+        "_",
+        tolower(params$scale),
+        "_",
+        seq_len(1)
+      ),
+    description = NA,
+    result = NA
+  )
+}
+```
+
+```{r examples-make_df}
+df <- make_df(
+  params = list(
+    test = "tmt",
+    test_name = "Trail Making Test",
+    scale = "Trails B",
+    raw_score = 55,
+    score = 50,
+    score_type = "t_score",
+    domain = "Attention/Executive",
+    subdomain = "Processing Speed",
+    narrow = "Set-Shifting",
+    pass = "Planning",
+    verbal = "Nonverbal",
+    timed = "Timed",
+    mean = 50,
+    stdev = 10,
+    reliability = .95,
+    test_type = "npsych_test"
+  )
+)
+
+```
+
+```{r development-inflate-make_df, eval=FALSE}
+fusen::inflate(flat_file = "dev/flat_make_df.Rmd", vignette_name = "Make dataframe")
+```

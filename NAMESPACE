@@ -2,6 +2,7 @@
 
 export("%>%")
 export(drill)
+export(make_df)
 export(my_fun)
 export(my_median)
 export(my_other_median)

@@ -16,9 +16,9 @@
 #' @examples
 #' datafile <- system.file("neurocog.csv", package = "brainworkupr")
 #' neurocog <- read.csv(datafile, encoding = "UTF-8")
-#' patient <- "Biggie"
-#' drill(patient = patient, data = neurocog)
-drill <- function(patient = NULL, data = c("neurocog", "neurobehav")) {
+#' # patient <- "Biggie"
+#' drill(patient = "Biggie", data = neurocog)
+drill <- function(patient = NULL, data) {
   ## Level 1
   ## Domain scores
   # 1. create mean z-scores for domain
@@ -230,7 +230,7 @@ drill <- function(patient = NULL, data = c("neurocog", "neurobehav")) {
   y <- c("{point.name}", "{point.y}", "{point.y2}", "{point.range}")
   tt <- highcharter::tooltip_table(x, y)
   
-  ## Create drilldown bar plot zscores
+  ## Create drilldown bar plot z-scores
   plot <-
     highcharter::highchart() %>%
     highcharter::hc_title(text = patient,

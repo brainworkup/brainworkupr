@@ -16,7 +16,8 @@ Imports:
     magrittr,
     rlang,
     stats,
-    tibble
+    tibble,
+    tidytable
 Suggests: 
     knitr,
     rmarkdown,

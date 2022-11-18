@@ -1,0 +1,32 @@
+{
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#d6b5f1",
+    "activityBar.background": "#d6b5f1",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#bc7724",
+    "activityBarBadge.foreground": "#15202b",
+    "editorGroup.border": "#d6b5f1",
+    "sash.hoverBorder": "#d6b5f1",
+    "tab.activeBorder": "#d6b5f1"
+  },
+  "peacock.color": "#be8ae9",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "**/.trunk/*out": true,
+    ".Rproj.user": true,
+    ".trunk": true,
+    ".vscode": true,
+    "brainworkupr.Rproj": true,
+    "LICENSE": true,
+    "LICENSE.md": true,
+    "renv": true,
+    "CODE_OF_CONDUCT.md": true
+  },
+  "explorerExclude.backup": {}
+}

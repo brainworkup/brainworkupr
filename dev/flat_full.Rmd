@@ -215,7 +215,7 @@ fusen::inflate(flat_file = "dev/flat_full.Rmd", vignette_name = "Get started")
 #' A drilldown plot
 #'
 #' @export
-drill <- function(patient = NULL, data = c("neurocog", "neurobehav")) {
+drill <- function(patient = NULL, data) {
   ## Level 1
   ## Domain scores
   # 1. create mean z-scores for domain
@@ -471,8 +471,7 @@ drill <- function(patient = NULL, data = c("neurocog", "neurobehav")) {
 ```{r example-drill}
 datafile <- system.file("neurocog.csv", package = "brainworkupr")
 neurocog <- read.csv(datafile, encoding = "UTF-8")
-patient <- "Biggie"
-drill(patient = patient, data = neurocog)
+drill(patient = "Biggie", data = neurocog)
 ```
 
 You're one inflate from paper to box.
