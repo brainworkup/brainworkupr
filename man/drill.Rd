@@ -20,6 +20,5 @@ This function uses the R Highcharter package and drilldown function to "drill do
 \examples{
 datafile <- system.file("neurocog.csv", package = "brainworkupr")
 neurocog <- read.csv(datafile, encoding = "UTF-8")
-# patient <- "Biggie"
 drill(patient = "Biggie", data = neurocog)
 }

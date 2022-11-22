@@ -16,7 +16,6 @@
 #' @examples
 #' datafile <- system.file("neurocog.csv", package = "brainworkupr")
 #' neurocog <- read.csv(datafile, encoding = "UTF-8")
-#' # patient <- "Biggie"
 #' drill(patient = "Biggie", data = neurocog)
 drill <- function(patient = NULL, data) {
   ## Level 1
