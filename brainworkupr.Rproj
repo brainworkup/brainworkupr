@@ -18,4 +18,10 @@ LineEndingConversion: Posix
 
 BuildType: Package
 PackageUseDevtools: Yes
+PackagePath: /Users/joey/cortex/bwu/brainworkupr
 PackageInstallArgs: --no-multiarch --with-keep.source
+PackageRoxygenize: rd,collate,namespace
+
+UseNativePipeOperator: Yes
+
+ZoteroLibraries: "My Library"
