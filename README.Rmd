@@ -22,10 +22,11 @@ The goal of brainworkupr is to ...
 
 ## Installation
 
-You can install the development version of brainworkupr like so:
+You can install the development version of brainworkupr from [GitHub](https://github.com/) with:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("devtools")
+devtools::install_github("brainworkup/brainworkupr")
 ```
 
 ## Example
