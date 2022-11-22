@@ -10,10 +10,12 @@ The goal of brainworkupr is to …
 
 ## Installation
 
-You can install the development version of brainworkupr like so:
+You can install the development version of brainworkupr from
+[GitHub](https://github.com/) with:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("devtools")
+devtools::install_github("brainworkup/brainworkupr")
 ```
 
 ## Example
@@ -22,6 +24,9 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(brainworkupr)
+#> Registered S3 method overwritten by 'quantmod':
+#>   method            from
+#>   as.zoo.data.frame zoo
 ## basic example code
 ```
 
